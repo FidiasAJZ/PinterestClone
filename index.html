@@ -1,156 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clon pinterest</title>
-    <link rel="stylesheet" href="estilos/styles.css" />
-    <link rel="stylesheet" href="./Card/card.style.css">
-    <link rel="stylesheet" href="./SearchBar/searchBar.style.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar-container">
-          <div class="navbar-brand">
-            <a href="#"><img src="logo.png" alt="Logo"></a>
-          </div>
-          <div class="navbar-search">
-            <form>
-              <input type="text" placeholder="Buscar">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Siguiendo</a></li>
-              <li><a href="#">Explorar</a></li>
-              <li><a href="#">Mensajes</a></li>
-              <li><a href="#">Perfil</a></li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clon pinterest</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <link rel="stylesheet" href="./Card/card.style.css">
+  <link rel="stylesheet" href="./SearchBar/searchBar.style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="#"><img src="logo.png" alt="Logo"></a>
         </div>
-      </nav>
-    </header>
-    <section>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/ad/59/2d/ad592d7a5afb28d8ac2ab8f48019cd22.jpg"
-            alt="Imagen 1"
-          />
+        <div class="navbar-search">
+          <form>
+            <input type="text" placeholder="Buscar">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/94/98/e3/9498e391b29ab1c695c595be03a97d11.jpg"
-            alt="Imagen 2"
-          />
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Siguiendo</a></li>
+            <li><a href="#">Explorar</a></li>
+            <li><a href="#">Mensajes</a></li>
+            <li><a href="#">Perfil</a></li>
+          </ul>
         </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/f0/3a/7b/f03a7b26d72b62c6c29d897f7af5bf61.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/750x/cf/0c/c3/cf0cc38013c4ce6151dbf476c9517842.jpg"
-            alt="Imagen 1"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/cf/15/3a/cf153a9c17e58d24629d5f17467d6641.jpg"
-            alt="Imagen 2"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/90/c1/2b/90c12be28b303b1f0301a15647bc483d.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/564x/64/b1/16/64b116302a1d11c9bfc6e04b513ecfda.jpg"
-            alt="Imagen 1"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/33/18/9e/33189eb95e2852f7c50f29bd2cd4938d.jpg"
-            alt="Imagen 2"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/5b/17/ee/5b17ee46f1aa1e82703cc95dd41a1a52.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/6d/74/9e/6d749ec07dcb69f9c3868ee61612d104.jpg"
-            alt="Imagen 1"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/95/40/3a/95403a539b9b863f7e7fa4087910b444.jpg"
-            alt="Imagen 2"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/f7/de/77/f7de77ca9166f7b6fc64690ce9ea4c7e.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/cc/5c/de/cc5cde63879b7df251c88d4068b33cea.jpg"
-            alt="Imagen 1"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/56/ab/f9/56abf922951fd382a753bbf42c2cf2d2.jpg"
-            alt="Imagen 2"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/4c/7f/c5/4c7fc57653d232f91ae4801307dd2db6.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/a9/bc/c2/a9bcc25d75ee30a199e24b85492f9591.jpg"
-            alt="Imagen 1"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/4c/7f/c5/4c7fc57653d232f91ae4801307dd2db6.jpg"
-            alt="Imagen 2"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="https://i.pinimg.com/236x/02/b5/49/02b549690c96653bd7f72011665ab40c.jpg"
-            alt="Imagen 3"
-          />
-        </div>
-        <!-- Agregar más galerías según sea necesario -->
       </div>
-    </section>
+    </nav>
+  </header>
+  <section>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/ad/59/2d/ad592d7a5afb28d8ac2ab8f48019cd22.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/94/98/e3/9498e391b29ab1c695c595be03a97d11.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/f0/3a/7b/f03a7b26d72b62c6c29d897f7af5bf61.jpg" alt="Imagen 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/750x/cf/0c/c3/cf0cc38013c4ce6151dbf476c9517842.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/cf/15/3a/cf153a9c17e58d24629d5f17467d6641.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/90/c1/2b/90c12be28b303b1f0301a15647bc483d.jpg" alt="Imagen 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/64/b1/16/64b116302a1d11c9bfc6e04b513ecfda.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/33/18/9e/33189eb95e2852f7c50f29bd2cd4938d.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/5b/17/ee/5b17ee46f1aa1e82703cc95dd41a1a52.jpg" alt="Imagen 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/6d/74/9e/6d749ec07dcb69f9c3868ee61612d104.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/95/40/3a/95403a539b9b863f7e7fa4087910b444.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/f7/de/77/f7de77ca9166f7b6fc64690ce9ea4c7e.jpg" alt="Imagen 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/cc/5c/de/cc5cde63879b7df251c88d4068b33cea.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/56/ab/f9/56abf922951fd382a753bbf42c2cf2d2.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/4c/7f/c5/4c7fc57653d232f91ae4801307dd2db6.jpg" alt="Imagen 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/a9/bc/c2/a9bcc25d75ee30a199e24b85492f9591.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/4c/7f/c5/4c7fc57653d232f91ae4801307dd2db6.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/236x/02/b5/49/02b549690c96653bd7f72011665ab40c.jpg" alt="Imagen 3" />
+      </div>
+
+      <!-- Agregar más galerías según sea necesario -->
+    </div>
+  </section>
 
   <!-- Enlazar los scripts -->
+  <script src="main.js"></script>
   <script src="./Card/card.script.js"></script>
   <script src="./SearchBar/searchBar.script.js"></script>
-  </body>
+</body>
+
 </html>
 <!-- Los componentes son las tarjetas, la barra de busqueda  -->
