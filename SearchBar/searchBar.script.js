@@ -114,7 +114,8 @@ function buscar(event) {
     "CyberPunk",
     "Pokemon",
     "Retro Art",
-    "Animal Crossing"
+    "Animal Crossing",
+    "Web Design"
   ];
   ideasP = `
   <div class="ideasP1">
@@ -185,6 +186,17 @@ function buscar(event) {
             />
         </div>
     </div>
+    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card-item">
+        <div class= "titulo-card-7">
+            <h3>`+ ideasP[6] +`</h3>
+        </div>
+        <img
+        src="https://i.pinimg.com/236x/95/b7/71/95b771f91a8889aabca7d3fa18e76512.jpg"
+        alt="Imagen 1"
+        />
+    </div>
+</div>
   </div>
 `;
 
@@ -195,7 +207,9 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
     <p style = "margin: 2%";>Populares en pinterest</p>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ popuP[0] +`</h3>
+            <div class= "titulo-popu-1">
+                <h3>`+ popuP[0] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/b4/67/01/b467015c1c4053cc819154a405a2c1a0.jpg"
             alt="Imagen 1"
@@ -204,7 +218,9 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ popuP[1] +`</h3>
+            <div class= "titulo-popu-2">
+                <h3>`+ popuP[1] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/36/fd/74/36fd7465c6efd2cc221f46ff62ef7ad3.jpg"
             alt="Imagen 1"
@@ -213,7 +229,9 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ popuP[2] +`</h3>
+            <div class= "titulo-popu-3">
+                <h3>`+ popuP[2] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/c0/37/c3/c037c3126d2a9eec910a8724aed0e8fa.jpg"
             alt="Imagen 1"
@@ -222,7 +240,9 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ popuP[3] +`</h3>
+            <div class= "titulo-popu-4">
+                <h3>`+ popuP[3] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/cb/58/39/cb58399828e55ed76603aea150b2998d.jpg"
             alt="Imagen 1"
