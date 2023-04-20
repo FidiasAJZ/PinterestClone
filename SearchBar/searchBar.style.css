@@ -1,1 +1,235 @@
-/*Cristian*/
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #efefef;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e60023;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .resultados {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1000px;
+    height: 650px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none;
+  }
+  
+  .card {
+    display: inline-block; /* Permite apilar las cajas juntas */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0.5%;
+  }
+  
+  .card-item img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    /* filter: brightness(80%) saturate(90%); */
+  }
+  
+  .titulo-card-1 h3{
+    position:absolute;
+    top: 33%;
+    right: 75%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-2 h3{
+    position:absolute;
+    top: 33%;
+    right: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-3 h3{
+    position:absolute;
+    top: 33%;
+    right: 33%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-4 h3{
+    position:absolute;
+    top: 33%;
+    right: 12%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-5 h3{
+    position:absolute;
+    top: 50%;
+    right: 79%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-6 h3{
+    position:absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-7 h3{
+    position:absolute;
+    top: 50%;
+    right: 32%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-popu-1 h3{
+    position: absolute;
+    top: 76%;
+    right: 70%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-popu-2 h3{
+    position: absolute;
+    top: 76%;
+    right: 53%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-popu-3 h3{
+    position: absolute;
+    top: 76%;
+    right: 37%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-popu-4 h3{
+    position: absolute;
+    top: 76%;
+    right: 15%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .card-item:hover img {
+    /* transform: scale(1); */
+    filter: brightness(80%) saturate(90%);
+  }
+
+  .btn-round {
+    border-radius: 50%;
+    width: 150px;
+    height: 40px;
+    background-color:gray;
+    border: none;
+    position: relative;
+  }
+  
+  .close-icon {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  
+  .label-with-button {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    transition: box-shadow 0.1s ease-in-out;
+  }
+  
+  .button-in-label {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .label-with-button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .busquedasR {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
