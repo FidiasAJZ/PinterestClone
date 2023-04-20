@@ -26,9 +26,11 @@
             </ul>
         </div>
         <div class="navbar-search">
-          <form>
-            <input type="text" placeholder="Buscar">
-            <button type="submit"><i class="fa fa-search"></i></button>
+          <form onsubmit="buscar(event)">
+            <input type="text" placeholder="Buscar en Pinterest" class="search-bar" id="search-btn">
+            <button type="submit" class="search-bar"><i class="fa fa-search"></i></button>
+            <div class="resultados">
+            </div>
           </form>
         </div>
       </div>
