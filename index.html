@@ -16,22 +16,22 @@
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-brand">
-          <a href="#"><img src="logo.png" alt="Logo"></a>
-        </div>
-        <div class="navbar-search">
-          <form>
-            <input type="text" placeholder="Buscar">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+          <a href="#"><img src="./img/logo-piterest.png" alt="Logo"></a>
         </div>
         <div class="navbar-links">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Siguiendo</a></li>
-            <li><a href="#">Explorar</a></li>
-            <li><a href="#">Mensajes</a></li>
-            <li><a href="#">Perfil</a></li>
-          </ul>
+            <ul>
+              <li><a id="navLin" class="active" href="#">Inicio</a></li>
+              <li><a id="navLin" href="#">Hoy</a></li>
+              <li><a id="navLin" href="#">Crear</a></li>
+            </ul>
+        </div>
+        <div class="navbar-search">
+          <form onsubmit="buscar(event)">
+            <input type="text" placeholder="Buscar en Pinterest" class="search-bar" id="search-btn">
+            <button type="submit" class="search-bar"><i class="fa fa-search"></i></button>
+            <div class="resultados">
+            </div>
+          </form>
         </div>
       </div>
     </nav>
