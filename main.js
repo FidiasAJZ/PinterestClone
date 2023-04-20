@@ -9,7 +9,7 @@ const fetchImagesFromUnsplash = async (count) => {
   const accessKey = '4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg';
   const secretKey = 'TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA';
   const response = await fetch(
-    `https://api.unsplash.com/photos/random?client_id=${accessKey}&client_secret=${secretKey}&count=${count}`
+    `https://api.unsplash.com/photos/random?client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg&client_secret=TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA&count=200`
   );
   const data = await response.json();
   return data;
@@ -90,4 +90,3 @@ function dropdown() {
   });
 }
 dropdown();
- 
