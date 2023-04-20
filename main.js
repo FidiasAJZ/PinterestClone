@@ -51,3 +51,43 @@ const loadMorePictures = async () => {
 };
 
 window.addEventListener('scroll', loadMorePictures);
+
+
+
+
+/*------------------------- funtion Button of Crear ----------------------------- */
+const btnDropdown = document.querySelector("#navCrear");
+const drop = document.querySelector(".crear-down");
+
+function dropdown() {
+  btnDropdown.addEventListener("click", () => {
+    drop.classList.toggle("active");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (event.target === btnDropdown || event.target === drop) {
+      return;
+    }
+    drop.classList.remove("active");
+  });
+
+  drop.addEventListener("mouseover", () => {
+    const elementoActivo = document.querySelectorAll("#creaOption");
+
+    elementoActivo.forEach((item) => {
+      item.addEventListener("mouseenter", (event) => {
+        elementoActivo.forEach((otherItem) => {
+          otherItem.classList.remove("active");
+        });
+        item.classList.add("active");
+      });
+      item.addEventListener("mouseleave", () => {
+        if (item.event.target === item) {
+          item.classList.remove("active");
+        }
+      });
+    });
+  });
+}
+dropdown();
+ 
