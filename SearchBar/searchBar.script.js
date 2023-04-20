@@ -44,7 +44,7 @@ function buscar(event) {
       `;
   });
 
-  //Misma función pero en sintaxis anonima, la de arriba es flecha.
+  //Misma función de arriba pero en sintaxis anonima, la de arriba es flecha.
   /*     resultadosRe.forEach(function(resultado) {
         cards += `
           <div class="card search-bar">
@@ -68,7 +68,7 @@ function buscar(event) {
   ];
   let res =
     `<div class="busquedasR">
-                <p>Búsquedas recientes:</p>
+                <p>Búsquedas recientes</p>
                 <br>
                 <label class="label-with-button">
                 ` +
@@ -121,16 +121,20 @@ function buscar(event) {
     <p style = "margin: 2%";>Ideas para ti</p>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
-            <h3>`+ ideasP[0] +`</h3>
+            <div class= "titulo-card-1">
+                <h3>`+ ideasP[0] +`</h3>
+            </div>
             <img
-            src="https://i.pinimg.com/236x/4f/e9/da/4fe9dab14027761e16fb43574536c372.jpg"
+            src="https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg"
             alt="Imagen 1"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
-            <h3>`+ ideasP[1] +`</h3>
+            <div class= "titulo-card-2">
+                <h3>`+ ideasP[1] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/1f/87/b2/1f87b29a2df46100a75aa86b170a21cb.jpg"
             alt="Imagen 1"
@@ -139,7 +143,9 @@ function buscar(event) {
     </div>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
-            <h3>`+ ideasP[2] +`</h3>
+            <div class= "titulo-card-3">
+              <h3>`+ ideasP[2] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/e8/2c/b8/e82cb85c82a95ed99f9139ebf9183649.jpg"
             alt="Imagen 1"
@@ -148,7 +154,9 @@ function buscar(event) {
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
+        <div class= "titulo-card-4">
             <h3>`+ ideasP[3] +`</h3>
+        </div>
             <img
             src="https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg"
             alt="Imagen 1"
@@ -157,7 +165,9 @@ function buscar(event) {
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ ideasP[4] +`</h3>
+            <div class= "titulo-card-5">
+                <h3>`+ ideasP[4] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/a6/e9/b1/a6e9b145f25fcc30ae82e312d43cf448.jpg"
             alt="Imagen 1"
@@ -166,7 +176,9 @@ function buscar(event) {
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
-            <h3>`+ ideasP[5] +`</h3>
+            <div class= "titulo-card-6">
+                <h3>`+ ideasP[5] +`</h3>
+            </div>
             <img
             src="https://i.pinimg.com/236x/fe/d1/26/fed126bff6d4642325963b8bc33b7ba3.jpg"
             alt="Imagen 1"

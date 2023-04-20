@@ -51,6 +51,7 @@ form {
     display: inline-block; /* Permite apilar las cajas juntas */
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 0.5%;
   }
   
   .card-item img {
@@ -60,10 +61,78 @@ form {
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 30px;
+    /* filter: brightness(80%) saturate(90%); */
   }
   
+  .titulo-card-1 h3{
+    position:absolute;
+    top: 33%;
+    right: 75%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-2 h3{
+    position:absolute;
+    top: 33%;
+    right: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-3 h3{
+    position:absolute;
+    top: 33%;
+    right: 33%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-4 h3{
+    position:absolute;
+    top: 33%;
+    right: 12%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-5 h3{
+    position:absolute;
+    top: 50%;
+    right: 79%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-6 h3{
+    position:absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
   .card-item:hover img {
-    transform: scale(1.1);
+    /* transform: scale(1); */
+    filter: brightness(80%) saturate(90%);
   }
 
   .btn-round {
@@ -109,5 +178,3 @@ form {
     margin-top: 2%;
     margin-left: 2%;
   }
-
-  
