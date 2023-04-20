@@ -38,25 +38,26 @@ form {
     right: 0;
     margin: auto;
     width: 1000px;
-    height: 500px;
+    height: 650px;
     background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     display: none;
   }
   
   .card {
-    display: flex;
+    display: inline-block; /* Permite apilar las cajas juntas */
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 40px;
   }
   
   .card-item img {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 30px;
   }
@@ -64,3 +65,49 @@ form {
   .card-item:hover img {
     transform: scale(1.1);
   }
+
+  .btn-round {
+    border-radius: 50%;
+    width: 150px;
+    height: 40px;
+    background-color:gray;
+    border: none;
+    position: relative;
+  }
+  
+  .close-icon {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  
+  .label-with-button {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    transition: box-shadow 0.1s ease-in-out;
+  }
+  
+  .button-in-label {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .label-with-button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .busquedasR {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+
+  
