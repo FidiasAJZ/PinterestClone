@@ -29,6 +29,7 @@ function buscar(event) {
   // Generar los componentes de tipo Card con los resultados de la búsqueda
   const resultadosRe = ["Resultado 1", "Resultado 2", "Resultado 3"]; // Ejemplo de resultados
   let cards = "";
+  //forOff * Investigar
   resultadosRe.forEach((resultado) => {
     cards += `
         <div class="card search-bar" style = "margin-left: 2%;">
@@ -108,6 +109,7 @@ function buscar(event) {
                 </label>
              </div>`;
   //Crear las opciones de Ideas para ti
+  //Objeto para las imagenes. Titulo, Imagenes, Descripción. 
   let ideasP = [
     "Diseños de IA",
     "Aesthetic Design",
@@ -115,7 +117,8 @@ function buscar(event) {
     "Pokemon",
     "Retro Art",
     "Animal Crossing",
-    "Web Design"
+    "Web Design",
+    "Zelda"
   ];
   ideasP = `
   <div class="ideasP1">
@@ -195,8 +198,19 @@ function buscar(event) {
         src="https://i.pinimg.com/236x/95/b7/71/95b771f91a8889aabca7d3fa18e76512.jpg"
         alt="Imagen 1"
         />
+        </div>
     </div>
-</div>
+    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card-item">
+        <div class= "titulo-card-8">
+            <h3>`+ ideasP[7] +`</h3>
+        </div>
+        <img
+        src="https://i.pinimg.com/236x/b9/ef/71/b9ef714bfda45d9d4f8cd8f990f40574.jpg"
+        alt="Imagen 1"
+        />
+        </div>
+    </div>
   </div>
 `;
 
