@@ -2,19 +2,20 @@
 
 const container = document.querySelector('.gallery');
 let page = 1;
-const imagesToFetch = 100;
+const imagesToFetch = 200;
+const lastPicture = container.lastElementChild;
 
 const fetchImagesFromUnsplash = async (count) => {
   const accessKey = '4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg';
+  const secretKey = 'TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA';
   const response = await fetch(
-    `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=${count}`
+    `https://api.unsplash.com/photos/random?client_id=${accessKey}&client_secret=${secretKey}&count=${count}`
   );
   const data = await response.json();
   return data;
 };
 
 const loadMorePictures = async () => {
-  const lastPicture = container.lastElementChild;
   const lastPictureOffset = lastPicture.offsetTop + lastPicture.clientHeight;
   const pageOffset = window.pageYOffset + window.innerHeight;
   const bottomOffset = 20;
@@ -50,4 +51,3 @@ const loadMorePictures = async () => {
 };
 
 window.addEventListener('scroll', loadMorePictures);
-
