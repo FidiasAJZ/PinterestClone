@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="estilos/styles.css" />
   <link rel="stylesheet" href="./Card/card.style.css">
   <link rel="stylesheet" href="./SearchBar/searchBar.style.css">
+
+  <!---- boxicons 2.1.4 -->
+  <link href='./estilos/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -19,12 +23,18 @@
           <a href="#"><img src="./img/logo-piterest.png" alt="Logo"></a>
         </div>
         <div class="navbar-links">
-            <ul>
-              <li><a id="navLin" class="active" href="#">Inicio</a></li>
-              <li><a id="navLin" href="#">Hoy</a></li>
-              <li><a id="navLin" href="#">Crear</a></li>
-            </ul>
-        </div>
+          <ul>
+            <li><a id="navInicio" class="active" href="#">Inicio</a></li>
+            <li><a id="navHoy" href="#">Hoy</a></li>
+            <li>
+              <a id="navCrear" href="#">Crear&nbsp;<i class='bx bxs-chevron-down'></i></a>
+              <div class="crear-down">
+                <a id="creaOption" class="active" href="https://chat.openai.com/">Crear un Idea Pin</a>
+                <a id="creaOption" href="https://chat.openai.com/">Crear Pin</a>
+              </div>
+            </li>
+          </ul>
+      </div>
         <div class="navbar-search">
           <form onsubmit="buscar(event)">
             <input type="text" placeholder="Buscar en Pinterest" class="search-bar" id="search-btn">
@@ -32,6 +42,19 @@
             <div class="resultados">
             </div>
           </form>
+        </div>
+        <div class="adva-fun">
+          <ul>
+            <li>
+              <div class="btn-fun"><i class='bx bxs-bell'></i></div>
+            </li>
+            <li>
+              <div class="btn-fun"><i class='bx bxs-message-rounded-dots'></i></div>
+            </li>
+            <li>
+              <div class="btn-fun"><i class='bx bxs-chevron-down'></i></div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
