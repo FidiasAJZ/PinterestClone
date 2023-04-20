@@ -37,12 +37,12 @@ form {
     left: 0;
     right: 0;
     margin: auto;
-    width: 1000px;
-    height: 650px;
+    width: 950px;
+    height: 600px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     z-index: 999;
     display: none;
   }
@@ -66,7 +66,7 @@ form {
   
   .titulo-card-1 h3{
     position:absolute;
-    top: 33%;
+    top: 36%;
     right: 75%;
     transform: translate(-50%, -20%);
     color: white;
@@ -77,8 +77,8 @@ form {
 
   .titulo-card-2 h3{
     position:absolute;
-    top: 33%;
-    right: 50%;
+    top: 36%;
+    right: 47%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -88,8 +88,8 @@ form {
 
   .titulo-card-3 h3{
     position:absolute;
-    top: 33%;
-    right: 33%;
+    top: 36%;
+    right: 30%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -99,8 +99,8 @@ form {
 
   .titulo-card-4 h3{
     position:absolute;
-    top: 33%;
-    right: 12%;
+    top: 36%;
+    right: 8%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -110,7 +110,7 @@ form {
 
   .titulo-card-5 h3{
     position:absolute;
-    top: 50%;
+    top: 54%;
     right: 79%;
     transform: translate(-50%, -20%);
     color: white;
@@ -121,8 +121,8 @@ form {
 
   .titulo-card-6 h3{
     position:absolute;
-    top: 50%;
-    right: 50%;
+    top: 54%;
+    right: 48%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -132,8 +132,19 @@ form {
 
   .titulo-card-7 h3{
     position:absolute;
-    top: 50%;
-    right: 32%;
+    top: 54%;
+    right: 29%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .titulo-card-8 h3{
+    position:absolute;
+    top: 54%;
+    right: 11%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -143,8 +154,8 @@ form {
 
   .titulo-popu-1 h3{
     position: absolute;
-    top: 76%;
-    right: 70%;
+    top: 82%;
+    right: 69%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -154,8 +165,8 @@ form {
 
   .titulo-popu-2 h3{
     position: absolute;
-    top: 76%;
-    right: 53%;
+    top: 82%;
+    right: 51%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -165,8 +176,8 @@ form {
 
   .titulo-popu-3 h3{
     position: absolute;
-    top: 76%;
-    right: 37%;
+    top: 82%;
+    right: 34%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -176,8 +187,8 @@ form {
 
   .titulo-popu-4 h3{
     position: absolute;
-    top: 76%;
-    right: 15%;
+    top: 82%;
+    right: 10%;
     transform: translate(-50%, -20%);
     color: white;
     font-size: 20px;
@@ -217,11 +228,11 @@ form {
   }
   
   .button-in-label {
-    background-color: #ddd;
+    background-color: rgb(214, 214, 214);
     color: rgb(0, 0, 0);
     border: none;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-left: 10px;
   }
   
