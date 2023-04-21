@@ -33,10 +33,7 @@ form {
   
   .resultados {
     position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin-top: 44%;
     width: 950px;
     height: 600px;
     background-color: #fff;
