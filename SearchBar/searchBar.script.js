@@ -118,10 +118,7 @@ function buscar(event) {
         this.descripcion = descripcion;
     }
   }
-
-  var tarjetas = new tarjeta1('Diseños de IA', 'https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg', 'Imagen 1');
-
-  let ideasP = [
+  let ideasPa = [
     "Diseños de IA",
     "Aesthetic Design",
     "CyberPunk",
@@ -138,18 +135,18 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-1">
-                <h3>`+ tarjeta1.titulo +`</h3>
+                <h3>`+ ideasPa[0] +`</h3>
             </div>
             <img
-            src="` + tarjeta1.src + `"
-            alt="` + tarjeta1.descripcion + `"
+            src="https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg"
+            alt="` + ideasPa[2] + `"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-2">
-                <h3>`+ ideasP[1] +`</h3>
+                <h3>`+ ideasPa[1] +`</h3>
             </div>
             <img
             src="https://i.pinimg.com/236x/1f/87/b2/1f87b29a2df46100a75aa86b170a21cb.jpg"
@@ -160,7 +157,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-3">
-              <h3>`+ ideasP[2] +`</h3>
+              <h3>`+ ideasPa[2] +`</h3>
             </div>
             <img
             src="https://i.pinimg.com/236x/e8/2c/b8/e82cb85c82a95ed99f9139ebf9183649.jpg"
@@ -171,7 +168,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
         <div class= "titulo-card-4">
-            <h3>`+ ideasP[3] +`</h3>
+            <h3>`+ ideasPa[3] +`</h3>
         </div>
             <img
             src="https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg"
@@ -182,7 +179,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
             <div class= "titulo-card-5">
-                <h3>`+ ideasP[4] +`</h3>
+                <h3>`+ ideasPa[4] +`</h3>
             </div>
             <img
             src="https://i.pinimg.com/236x/a6/e9/b1/a6e9b145f25fcc30ae82e312d43cf448.jpg"
@@ -193,7 +190,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
             <div class= "titulo-card-6">
-                <h3>`+ ideasP[5] +`</h3>
+                <h3>`+ ideasPa[5] +`</h3>
             </div>
             <img
             src="https://i.pinimg.com/236x/fe/d1/26/fed126bff6d4642325963b8bc33b7ba3.jpg"
@@ -204,7 +201,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%">
     <div class="card-item">
         <div class= "titulo-card-7">
-            <h3>`+ ideasP[6] +`</h3>
+            <h3>`+ ideasPa[6] +`</h3>
         </div>
         <img
         src="https://i.pinimg.com/236x/95/b7/71/95b771f91a8889aabca7d3fa18e76512.jpg"
@@ -215,7 +212,7 @@ function buscar(event) {
     <div class="card search-bar" style = "margin-left: 2%">
     <div class="card-item">
         <div class= "titulo-card-8">
-            <h3>`+ ideasP[7] +`</h3>
+            <h3>`+ ideasPa[7] +`</h3>
         </div>
         <img
         src="https://i.pinimg.com/236x/b9/ef/71/b9ef714bfda45d9d4f8cd8f990f40574.jpg"
