@@ -110,7 +110,7 @@ function buscar(event) {
                 </label>
              </div>`;
   //Crear las opciones de Ideas para ti
-  //Objeto para las imagenes. Titulo, Imagenes, Descripción.
+  //Objeto para las imagenes. Titulo, Imagenes, Descripción. API res -- JSON.
   class tarjetas {
     constructor(titulo, imagen, descripcion){
         this.titulo = titulo;
@@ -139,7 +139,7 @@ function buscar(event) {
             </div>
             <img
             src="https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg"
-            alt="` + ideasPa[2] + `"
+            alt="Imagen 1"
             />
         </div>
     </div>
