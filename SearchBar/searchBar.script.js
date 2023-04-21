@@ -3,7 +3,7 @@ var popup = document.querySelector(".resultados");
 var searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", function () {
-  buscar();
+  buscar(event);
   //popup.style.display = "block";
 });
 
@@ -13,10 +13,10 @@ document.addEventListener("click", function (event) {
 });
 
 function buscar(event) {
-  console.log("funciona ventana abierta");
-  ventanaEmergenteAbierta = false;
-  console.log(ventanaEmergenteAbierta);
-  console.log(popup);
+  //console.log("funciona ventana abierta");
+  //ventanaEmergenteAbierta = false;
+  //console.log(ventanaEmergenteAbierta);
+  //console.log(popup);
   // Prevenir que el formulario se envíe y recargue la página
   event.preventDefault();
 
