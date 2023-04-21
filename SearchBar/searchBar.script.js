@@ -59,6 +59,7 @@ function buscar(event) {
       }); */
 
   //Crear las opciones de busquedas recientes.
+
   let busquedasR = [
     "Programación web",
     "Ilustrador",
@@ -109,7 +110,17 @@ function buscar(event) {
                 </label>
              </div>`;
   //Crear las opciones de Ideas para ti
-  //Objeto para las imagenes. Titulo, Imagenes, Descripción. 
+  //Objeto para las imagenes. Titulo, Imagenes, Descripción.
+  class tarjetas {
+    constructor(titulo, imagen, descripcion){
+        this.titulo = titulo;
+        this.imagen = imagen;
+        this.descripcion = descripcion;
+    }
+  }
+
+  var tarjetas = new tarjeta1('Diseños de IA', 'https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg', 'Imagen 1');
+
   let ideasP = [
     "Diseños de IA",
     "Aesthetic Design",
@@ -120,17 +131,18 @@ function buscar(event) {
     "Web Design",
     "Zelda"
   ];
+
   ideasP = `
   <div class="ideasP1">
     <p style = "margin: 2%";>Ideas para ti</p>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-1">
-                <h3>`+ ideasP[0] +`</h3>
+                <h3>`+ tarjeta1.titulo +`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg"
-            alt="Imagen 1"
+            src="` + tarjeta1.src + `"
+            alt="` + tarjeta1.descripcion + `"
             />
         </div>
     </div>
