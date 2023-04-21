@@ -30,7 +30,9 @@
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1);
+  /*Cambios en el efecto hover*/
+  filter: brightness(80%) saturate(90%);
+  /* transform: scale(1.1); */
 }
 .gallery-item:nth-child(1){
   grid-row: span 2;
