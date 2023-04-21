@@ -74,41 +74,41 @@ function buscar(event) {
                 <br>
                 <label class="label-with-button">
                 ` +
-    busquedasR[0] +
-    `
+                busquedasR[0] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
                 <label class="label-with-button">
                 ` +
-    busquedasR[1] +
-    `
+                busquedasR[1] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
                 <label class="label-with-button">
                 ` +
-    busquedasR[2] +
-    `
+                busquedasR[2] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
                 <label class="label-with-button">
                 ` +
-    busquedasR[3] +
-    `
+                busquedasR[3] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
                 <label class="label-with-button">
                 ` +
-    busquedasR[4] +
-    `
+                busquedasR[4] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
                 <label class="label-with-button">
                 ` +
-    busquedasR[5] +
-    `
+                busquedasR[5] +
+                `
                 <button class="button-in-label">x</button>
                 </label>
-             </div>`;
+    </div>`;
   //Crear las opciones de Ideas para ti
   //Objeto para las imagenes. Titulo, Imagenes, Descripción. API res -- JSON.
   class tarjetas {
@@ -118,105 +118,120 @@ function buscar(event) {
         this.descripcion = descripcion;
     }
   }
-  let ideasPa = [
-    "Diseños de IA",
-    "Aesthetic Design",
-    "CyberPunk",
-    "Pokemon",
-    "Retro Art",
-    "Animal Crossing",
-    "Web Design",
-    "Zelda"
-  ];
+  function crearTarjetas(nombreDeLaClase, titulo, imagen, descripcion) {
+    // Crea una instancia de la clase con los argumentos proporcionados
+    var tarjeta = new tarjetas(titulo, imagen, descripcion);
+  
+    // Devuelve la instancia de la clase creada
+    return tarjeta;
+  }
 
+//Aca se crean las cards especiales que son generadas a partir de objetos.
+  var tarjeta1 = crearTarjetas(tarjeta1, "Diseños de IA", "https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg", "programación_web");
+
+  var tarjeta2 = crearTarjetas(tarjeta2, 'Aesthetic Design', 'https://i.pinimg.com/236x/1f/87/b2/1f87b29a2df46100a75aa86b170a21cb.jpg', 'aesthetic');
+
+  var tarjeta3 = crearTarjetas(tarjeta3, 'CyberPunk', 'https://i.pinimg.com/236x/e8/2c/b8/e82cb85c82a95ed99f9139ebf9183649.jpg', 'cyberpunk');
+
+  var tarjeta4 = crearTarjetas(tarjeta4, 'Pokemon', 'https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg', 'pokemon');
+
+  var tarjeta5 = crearTarjetas(tarjeta5, 'Retro Art', 'https://i.pinimg.com/236x/a6/e9/b1/a6e9b145f25fcc30ae82e312d43cf448.jpg', 'retro_art');
+
+  var tarjeta6 = crearTarjetas(tarjeta6, 'Animal Crossing', 'https://i.pinimg.com/236x/fe/d1/26/fed126bff6d4642325963b8bc33b7ba3.jpg', 'animal_crossing');
+
+  var tarjeta7 = crearTarjetas(tarjeta7, 'Web Design', 'https://i.pinimg.com/236x/95/b7/71/95b771f91a8889aabca7d3fa18e76512.jpg', 'web_design');
+
+  var tarjeta8 = crearTarjetas(tarjeta8, 'Zelda', 'https://i.pinimg.com/236x/b9/ef/71/b9ef714bfda45d9d4f8cd8f990f40574.jpg', 'zelda');
+
+  //Variable ideasP para almacenar la ventana que sera mostrada al presionar el searchBar
   ideasP = `
   <div class="ideasP1">
     <p style = "margin: 2%";>Ideas para ti</p>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-1">
-                <h3>`+ ideasPa[0] +`</h3>
+                <h3>`+ tarjeta1.titulo +`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/b8/73/e4/b873e4e484aa10857c1d460227549fd2.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta1.imagen+`"
+            alt="`+tarjeta1.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-2">
-                <h3>`+ ideasPa[1] +`</h3>
+                <h3>`+ tarjeta2.titulo +`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/1f/87/b2/1f87b29a2df46100a75aa86b170a21cb.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta2.imagen+`"
+            alt="`+tarjeta2.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%;">
         <div class="card-item">
             <div class= "titulo-card-3">
-              <h3>`+ ideasPa[2] +`</h3>
+              <h3>`+tarjeta3.titulo+`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/e8/2c/b8/e82cb85c82a95ed99f9139ebf9183649.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta3.imagen+`"
+            alt="`+tarjeta3.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
         <div class= "titulo-card-4">
-            <h3>`+ ideasPa[3] +`</h3>
+            <h3>`+tarjeta4.titulo+`</h3>
         </div>
             <img
-            src="https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta4.imagen+`"
+            alt="`+tarjeta4.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
             <div class= "titulo-card-5">
-                <h3>`+ ideasPa[4] +`</h3>
+                <h3>`+tarjeta5.titulo+`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/a6/e9/b1/a6e9b145f25fcc30ae82e312d43cf448.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta5.imagen+`"
+            alt="`+tarjeta5.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
         <div class="card-item">
             <div class= "titulo-card-6">
-                <h3>`+ ideasPa[5] +`</h3>
+                <h3>`+tarjeta6.titulo+`</h3>
             </div>
             <img
-            src="https://i.pinimg.com/236x/fe/d1/26/fed126bff6d4642325963b8bc33b7ba3.jpg"
-            alt="Imagen 1"
+            src="`+tarjeta6.imagen+`"
+            alt="`+tarjeta6.descripcion+`"
             />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
     <div class="card-item">
         <div class= "titulo-card-7">
-            <h3>`+ ideasPa[6] +`</h3>
+            <h3>`+tarjeta7.titulo+`</h3>
         </div>
         <img
-        src="https://i.pinimg.com/236x/95/b7/71/95b771f91a8889aabca7d3fa18e76512.jpg"
-        alt="Imagen 1"
+        src="`+tarjeta7.imagen+`"
+        alt="`+tarjeta7.descripcion+`"
         />
         </div>
     </div>
     <div class="card search-bar" style = "margin-left: 2%">
     <div class="card-item">
         <div class= "titulo-card-8">
-            <h3>`+ ideasPa[7] +`</h3>
+            <h3>`+tarjeta8.titulo+`</h3>
         </div>
         <img
-        src="https://i.pinimg.com/236x/b9/ef/71/b9ef714bfda45d9d4f8cd8f990f40574.jpg"
-        alt="Imagen 1"
+        src="`+tarjeta8.imagen+`"
+        alt="`+tarjeta8.descripcion+`"
         />
         </div>
     </div>
