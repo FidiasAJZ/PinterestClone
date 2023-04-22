@@ -1,15 +1,23 @@
 // // Scroll infinito
 
+
 const container = document.querySelector('.gallery');
-let page = 1;
-const imagesToFetch = 200;
 const lastPicture = container.lastElementChild;
+const imagesToFetch = 200;
+let page = 1;
+
+// Add random size class to gallery items
+const galleryItems = document.querySelectorAll('.gallery-item');
+galleryItems.forEach((item) => {
+  const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
+  item.classList.add(randomSize);
+});
 
 const fetchImagesFromUnsplash = async (count) => {
   const accessKey = '4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg';
   const secretKey = 'TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA';
   const response = await fetch(
-    `https://api.unsplash.com/photos/random?client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg&client_secret=TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA&count=200`
+    `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=${count}`
   );
   const data = await response.json();
   return data;
@@ -28,8 +36,11 @@ const loadMorePictures = async () => {
         img.alt = image.description;
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item');
+        const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
+        galleryItem.classList.add(randomSize);
         galleryItem.appendChild(img);
         container.appendChild(galleryItem);
+        lastPicture = galleryItem;
       });
       page++;
     } catch (error) {
@@ -37,21 +48,23 @@ const loadMorePictures = async () => {
       if (pictures.length > 0) {
         const numClones = Math.max(0, imagesToFetch - pictures.length);
         for (let i = 0; i < numClones; i++) {
-          const clone = pictures[i % pictures.length].cloneNode(true);
+          const original = galleryItems[i % galleryItems.length];
+          const clone = original.cloneNode(true);
+          const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
+          clone.classList.add(randomSize);
           container.appendChild(clone);
         }
+        lastPicture = container.lastElementChild;
       }
-      page++;
-
-      if (container.querySelectorAll('img').length >= imagesToFetch) {
-        window.removeEventListener('scroll', loadMorePictures);
-      }
+    }
+    page++;
+    if (container.querySelectorAll('img').length >= imagesToFetch) {
+      window.removeEventListener('scroll', loadMorePictures);
     }
   }
 };
 
 window.addEventListener('scroll', loadMorePictures);
-
 
 
 
