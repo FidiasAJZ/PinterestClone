@@ -1,21 +1,17 @@
 // // Scroll infinito
 
-
 const container = document.querySelector('.gallery');
-const lastPicture = container.lastElementChild;
+let lastPicture = container.lastElementChild;
 const imagesToFetch = 200;
-let page = 1;
 
-// Add random size class to gallery items
+// Agregar una clase de tamaño al azar para cada contenedor de imagen
+const getRandomSize = () => ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
 const galleryItems = document.querySelectorAll('.gallery-item');
-galleryItems.forEach((item) => {
-  const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
-  item.classList.add(randomSize);
-});
+galleryItems.forEach((item) => item.classList.add(getRandomSize()));
 
+// Llama imagenes atraves de la API de unsplash
 const fetchImagesFromUnsplash = async (count) => {
   const accessKey = '4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg';
-  const secretKey = 'TvHhh76XWCrh1U2reqdP7Nx-hdy0IfdfBKkSkoXxUfA';
   const response = await fetch(
     `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=${count}`
   );
@@ -35,14 +31,15 @@ const loadMorePictures = async () => {
         img.src = image.urls.regular;
         img.alt = image.description;
         const galleryItem = document.createElement('div');
-        galleryItem.classList.add('gallery-item');
-        const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
-        galleryItem.classList.add(randomSize);
+        galleryItem.classList.add('gallery-item', getRandomSize());
         galleryItem.appendChild(img);
         container.appendChild(galleryItem);
         lastPicture = galleryItem;
       });
-      page++;
+      if (container.querySelectorAll('img').length >= imagesToFetch) {
+        window.removeEventListener('scroll', debounce(loadMorePictures, 200));
+      }
+      // si hay problema llamando fotos de unspash, entonces clonara las fotos ya existentes
     } catch (error) {
       const pictures = container.querySelectorAll('.gallery-item');
       if (pictures.length > 0) {
@@ -50,22 +47,26 @@ const loadMorePictures = async () => {
         for (let i = 0; i < numClones; i++) {
           const original = galleryItems[i % galleryItems.length];
           const clone = original.cloneNode(true);
-          const randomSize = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
-          clone.classList.add(randomSize);
+          clone.classList.add(getRandomSize());
           container.appendChild(clone);
         }
         lastPicture = container.lastElementChild;
       }
     }
-    page++;
-    if (container.querySelectorAll('img').length >= imagesToFetch) {
-      window.removeEventListener('scroll', loadMorePictures);
-    }
   }
 };
-
-window.addEventListener('scroll', loadMorePictures);
-
+// Ayuda a evitar llamadas inecesarias a la API poniendo un delay una vez se hace scroll hasta el final
+const debounce = (fn, delay) => {
+  let timer = null;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+};
+// Evento que activa la funcion cuando se hace scroll
+window.addEventListener('scroll', debounce(loadMorePictures, 500));
 
 
 /*------------------------- funtion Button of Crear ----------------------------- */
