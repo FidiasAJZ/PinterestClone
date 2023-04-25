@@ -69,38 +69,41 @@ const debounce = (fn, delay) => {
 window.addEventListener('scroll', debounce(loadMorePictures, 500));
 
 
-/*------------------------- funtion Button of Crear ----------------------------- */
-const btnDropdown = document.querySelector("#navCrear");
-const drop = document.querySelector(".crear-down");
 
-function dropdown() {
-  btnDropdown.addEventListener("click", () => {
-    drop.classList.toggle("active");
-  });
+/*------------------------- funtion Button of dropdown ----------------------------- */
+const toggleBtns = document.querySelectorAll(".dropdown-toggle");
+const drops = document.querySelectorAll(".dropdown-menu");
 
-  document.addEventListener("click", (event) => {
-    if (event.target === btnDropdown || event.target === drop) {
-      return;
-    }
-    drop.classList.remove("active");
-  });
+for (let i = 0; i < toggleBtns.length; i++) {
+  toggleBtns[i].addEventListener("click", () => {
+    drops[i].classList.toggle("active");
 
-  drop.addEventListener("mouseover", () => {
-    const elementoActivo = document.querySelectorAll("#creaOption");
+    //este codigo hace que al darle click en cualquier para del document se oculte el dropdown
+    document.addEventListener("click", (event) => {
+      if (
+        !toggleBtns[i].contains(event.target) &&
+        !drops[i].contains(event.target)
+      ) {
+        drops[i].classList.remove("active");
+      }
+    });
 
-    elementoActivo.forEach((item) => {
-      item.addEventListener("mouseenter", (event) => {
-        elementoActivo.forEach((otherItem) => {
-          otherItem.classList.remove("active");
+    /* ------------------ function hover efect -----------------------------*/
+    drops[i].addEventListener("mouseover", () => {
+      const elementoActivo = document.querySelectorAll(".dropdown-item");
+      elementoActivo.forEach((item) => {
+        item.addEventListener("mouseenter", (event) => {
+          elementoActivo.forEach((otherItem) => {
+            otherItem.classList.remove("active");
+          });
+          item.classList.add("active");
         });
-        item.classList.add("active");
-      });
-      item.addEventListener("mouseleave", () => {
-        if (item.event.target === item) {
-          item.classList.remove("active");
-        }
+        item.addEventListener("mouseleave", () => {
+          if (item.target === item) {
+            item.classList.remove("active");
+          }
+        });
       });
     });
   });
 }
-dropdown();
