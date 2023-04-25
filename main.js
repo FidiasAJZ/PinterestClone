@@ -133,4 +133,11 @@ form.addEventListener('submit', (event) => {
         container.appendChild(galleryItem);
       });
     });
+
+      //Permite actualizar el array donde estan las busquedas recientes
+      for (let i = busquedasR.length - 1; i > 0; i--) {
+        busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
+      }
+      busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
+      console.log(busquedasR);
 });

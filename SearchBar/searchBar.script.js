@@ -1,6 +1,14 @@
 let ventanaEmergenteAbierta = true;
 var popup = document.querySelector(".resultados");
 var searchBtn = document.getElementById("search-btn");
+let busquedasR = [
+  "Programación web",
+  "Illustrator",
+  "Pokémon",
+  "Aesthetic Design",
+  "React.js",
+  "Kodigo.org",
+];
 
 searchBtn.addEventListener("click", function () {
   buscar(event);
@@ -27,88 +35,51 @@ function buscar(event) {
   popup.style.display = "block";
 
   // Generar los componentes de tipo Card con los resultados de la búsqueda
-  const resultadosRe = ["Resultado 1", "Resultado 2", "Resultado 3"]; // Ejemplo de resultados
-  let cards = "";
   //forOff * Investigar
-  resultadosRe.forEach((resultado) => {
-    cards += `
-        <div class="card search-bar" style = "margin-left: 2%;">
-            <div class="card-item">
-                <h3>${resultado}</h3>
-                <p>Descripción del resultado</p>
-                <img
-                src="https://i.pinimg.com/564x/ad/59/2d/ad592d7a5afb28d8ac2ab8f48019cd22.jpg"
-                alt="Imagen 1"
-                />
-            </div>
-        </div>
-      `;
-  });
-
-  //Misma función de arriba pero en sintaxis anonima, la de arriba es flecha.
-  /*     resultadosRe.forEach(function(resultado) {
-        cards += `
-          <div class="card search-bar">
-            <div class="card-item">
-              <h3>${resultado}</h3>
-              <p>Descripción del resultado</p>
-              <img src="https://i.pinimg.com/564x/ad/59/2d/ad592d7a5afb28d8ac2ab8f48019cd22.jpg" alt="Imagen 1" />
-            </div>
-          </div>
-        `;
-      }); */
 
   //Crear las opciones de busquedas recientes.
-
-  let busquedasR = [
-    "Programación web",
-    "Ilustrador",
-    "Pokémon",
-    "Aesthetic Design",
-    "React.js",
-    "Kodigo.org",
-  ];
   let res =
     `<div class="busquedasR">
                 <p>Búsquedas recientes</p>
                 <br>
-                <label class="label-with-button">
-                ` +
-                busquedasR[0] +
+                <label class="label-with-button" for="search-btn" id="label1">
+                `+
+                busquedasR[0]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
-                <label class="label-with-button">
-                ` +
-                busquedasR[1] +
+                <label class="label-with-button" for="search-btn" id="label2">
+                `+
+                busquedasR[1]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
-                <label class="label-with-button">
-                ` +
-                busquedasR[2] +
+                <label class="label-with-button" for="search-btn" id="label3">
+                `+
+                busquedasR[2]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
-                <label class="label-with-button">
-                ` +
-                busquedasR[3] +
+                <label class="label-with-button" for="search-btn" id="label4">
+                `+
+                busquedasR[3]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
-                <label class="label-with-button">
-                ` +
-                busquedasR[4] +
+                <label class="label-with-button" for="search-btn" id="label5">
+                `+
+                busquedasR[4]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
-                <label class="label-with-button">
-                ` +
-                busquedasR[5] +
+                <label class="label-with-button" for="search-btn" id="label6">
+                `+
+                busquedasR[5]+
                 `
-                <button class="button-in-label">x</button>
+                <button class="button-in-label"></button>
                 </label>
     </div>`;
+
   //Crear las opciones de Ideas para ti
   //Objeto para las imagenes. Titulo, Imagenes, Descripción. API res -- JSON.
   class tarjetas {
@@ -133,7 +104,7 @@ function buscar(event) {
 
   var tarjeta3 = crearTarjetas(tarjeta3, 'CyberPunk', 'https://i.pinimg.com/236x/e8/2c/b8/e82cb85c82a95ed99f9139ebf9183649.jpg', 'cyberpunk');
 
-  var tarjeta4 = crearTarjetas(tarjeta4, 'Pokemon', 'https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg', 'pokemon');
+  var tarjeta4 = crearTarjetas(tarjeta4, 'Pokémon', 'https://i.pinimg.com/236x/fd/56/5e/fd565e4e62eb6e35a69fdd9140c06a8f.jpg', 'pokemon');
 
   var tarjeta5 = crearTarjetas(tarjeta5, 'Retro Art', 'https://i.pinimg.com/236x/a6/e9/b1/a6e9b145f25fcc30ae82e312d43cf448.jpg', 'retro_art');
 
@@ -147,7 +118,7 @@ function buscar(event) {
   ideasP = `
   <div class="ideasP1">
     <p style = "margin: 2%";>Ideas para ti</p>
-    <div class="card search-bar" style = "margin-left: 2%;">
+    <div class="card search-bar" style = "margin-left: 2%;" id="div1">
         <div class="card-item">
             <div class= "titulo-card-1">
                 <h3>`+ tarjeta1.titulo +`</h3>
@@ -158,7 +129,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%;">
+    <div class="card search-bar" style = "margin-left: 2%;" id="div2">
         <div class="card-item">
             <div class= "titulo-card-2">
                 <h3>`+ tarjeta2.titulo +`</h3>
@@ -169,7 +140,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%;">
+    <div class="card search-bar" style = "margin-left: 2%;" id="div3">
         <div class="card-item">
             <div class= "titulo-card-3">
               <h3>`+tarjeta3.titulo+`</h3>
@@ -180,7 +151,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div4">
         <div class="card-item">
         <div class= "titulo-card-4">
             <h3>`+tarjeta4.titulo+`</h3>
@@ -191,7 +162,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div5">
         <div class="card-item">
             <div class= "titulo-card-5">
                 <h3>`+tarjeta5.titulo+`</h3>
@@ -202,7 +173,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div6">
         <div class="card-item">
             <div class= "titulo-card-6">
                 <h3>`+tarjeta6.titulo+`</h3>
@@ -213,7 +184,7 @@ function buscar(event) {
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div7">
     <div class="card-item">
         <div class= "titulo-card-7">
             <h3>`+tarjeta7.titulo+`</h3>
@@ -224,7 +195,7 @@ function buscar(event) {
         />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div8">
     <div class="card-item">
         <div class= "titulo-card-8">
             <h3>`+tarjeta8.titulo+`</h3>
@@ -243,7 +214,7 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
   popuP = `
   <div class="populares">
     <p style = "margin: 2%";>Populares en pinterest</p>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div9">
         <div class="card-item">
             <div class= "titulo-popu-1">
                 <h3>`+ popuP[0] +`</h3>
@@ -254,7 +225,7 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div10">
         <div class="card-item">
             <div class= "titulo-popu-2">
                 <h3>`+ popuP[1] +`</h3>
@@ -265,7 +236,7 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div11">
         <div class="card-item">
             <div class= "titulo-popu-3">
                 <h3>`+ popuP[2] +`</h3>
@@ -276,7 +247,7 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
             />
         </div>
     </div>
-    <div class="card search-bar" style = "margin-left: 2%">
+    <div class="card search-bar" style = "margin-left: 2%" id="div12">
         <div class="card-item">
             <div class= "titulo-popu-4">
                 <h3>`+ popuP[3] +`</h3>
@@ -292,6 +263,200 @@ let popuP = ["Fondos de pantalla", "Wallpaper PC", "Anime", "Samus", "Nintendo l
 
   // Insertar los componentes de tipo Card, busquedas recientes, ideas y populares en pinterest en la ventana emergente
   popup.innerHTML = res + ideasP + popuP;
+
+//Colocando el texto de las etiquetas de buscados recientemente.
+  const label1 = document.getElementById('label1');
+  const label2 = document.getElementById('label2');
+  const label3 = document.getElementById('label3');
+  const label4 = document.getElementById('label4');
+  const label5 = document.getElementById('label5');
+  const label6 = document.getElementById('label6');
+  
+  
+  label1.addEventListener('click', () => {
+    const labelText1 = label1.innerText;
+    searchBtn.value = labelText1;
+    unsplashBusqueda();
+    popup.style.display = "none";
+  });
+
+  label2.addEventListener('click', () => {
+    const labelText2 = label2.innerText;
+    searchBtn.value = labelText2;
+    unsplashBusqueda();
+  });
+
+  label3.addEventListener('click', () => {
+    const labelText3 = label3.innerText;
+    searchBtn.value = labelText3;
+    unsplashBusqueda();
+  });
+
+  label4.addEventListener('click', () => {
+    const labelText4 = label4.innerText;
+    searchBtn.value = labelText4;
+    unsplashBusqueda();
+  });
+
+  label5.addEventListener('click', () => {
+    const labelText5 = label5.innerText;
+    searchBtn.value = labelText5;
+    unsplashBusqueda();
+  });
+
+  label6.addEventListener('click', () => {
+    const labelText6 = label6.innerText;
+    searchBtn.value = labelText6;
+    unsplashBusqueda();
+  });
+
+  //Cambiando el texto del searBar con las imagenes de las opciones.
+  const myDiv1 = document.getElementById('div1');
+  const myDiv2 = document.getElementById('div2');
+  const myDiv3 = document.getElementById('div3');
+  const myDiv4 = document.getElementById('div4');
+  const myDiv5 = document.getElementById('div5');
+  const myDiv6 = document.getElementById('div6');
+  const myDiv7 = document.getElementById('div7');
+  const myDiv8 = document.getElementById('div8');
+  const myDiv9 = document.getElementById('div9');
+  const myDiv10 = document.getElementById('div10');
+  const myDiv11 = document.getElementById('div11');
+  const myDiv12 = document.getElementById('div12');
+
+
+  myDiv1.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv2.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv3.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv4.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv5.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv6.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv7.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv8.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv9.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv10.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv11.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  myDiv12.addEventListener('click', function(){
+    const h3Text = this.querySelector('h3').textContent;
+    searchBtn.value = h3Text;
+    popup.style.display = "none";
+    unsplashBusqueda();
+  });
+
+  //Cerrar la ventana si se presiona ESC
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      // Cerrar la ventana
+      popup.style.display = "none";
+    }
+  });
+}
+
+function updateSearchBar() {
+  const searchValues = busquedasR.map(element => `<option>${element}</option>`).join('');
+  document.getElementById('mySearchBarValues').innerHTML = searchValues;
+}
+
+function unsplashBusqueda(){
+  const searchValue = searchBtn.value;
+  const url = `https://api.unsplash.com/search/photos?query=${searchValue}&client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const images = data.results;
+      container.innerHTML = '';
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image.urls.regular;
+        img.alt = image.description;
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item', getRandomSize());
+        galleryItem.appendChild(img);
+        container.appendChild(galleryItem);
+      });
+    });
+
+/*     let lastIndex = busquedasR.length -1;
+    busquedasR[lastIndex] = searchValue;
+
+    console.log(busquedasR); */
+
+    //Permite actualizar el array donde estan las busquedas recientes
+    for (let i = busquedasR.length - 1; i > 0; i--) {
+      busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
+    }
+    busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
+    console.log(busquedasR); 
+}
+
+function cerrarVentana(){
+  popup.style.display = "none";
 }
 
 const searchBar = document.querySelector(".search-bar");
