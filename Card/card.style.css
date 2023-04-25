@@ -3,6 +3,7 @@
   padding: 100px;
   width: 100vw;
   position: absolute;
+  display: flex;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
@@ -15,6 +16,7 @@
   padding: 0;
   margin: 15px 10px;
   border-radius: 16px;
+  position: relative;
 }
 
 .gallery-item img {
@@ -41,4 +43,28 @@
   /*Cambios en el efecto hover*/
   filter: brightness(60%) saturate(90%);
   /* transform: scale(1.1); */
+}
+
+.btnCompartir{
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.btnOpciones{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.btnGuardar{
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  display: none;
 }

@@ -1,3 +1,48 @@
+const cards = document.querySelectorAll('.gallery-item');
+
+cards.forEach(card => {
+
+  //Crear boton de mas opciones
+  const img = card.querySelector('img');
+  
+  //Creando el boton de mas opciones
+  const button = document.createElement('button');
+  button.classList.add('btnOpciones');
+  button.textContent = '...';
+
+  //Creando boton de compartir
+  const btnCompartir = document.createElement('button');
+  btnCompartir.classList.add('btnCompartir');
+  btnCompartir.textContent = 'Share';
+
+  //Creando boton de guardar
+  const btnGuardar = document.createElement('button');
+  btnGuardar.classList.add('btnGuardar');
+  btnGuardar.textContent = 'Guardar';
+  
+  //Agregando los botones a pantalla
+  card.appendChild(button);
+  card.appendChild(btnCompartir);
+  card.appendChild(btnGuardar);
+  
+  //Este evento nos permite crear algo en pantalla cuando el mouse esta encima de un elemento.
+  img.addEventListener('mouseover', () => {
+    button.style.display = 'block';
+    btnCompartir.style.display = 'block';
+    btnGuardar.style.display = 'block';
+  });
+  
+  //Este evento hace lo contrario de lo de arriba, pero en este caso estamos eliminado lo que fue creado.
+  img.addEventListener('mouseout', () => {
+    button.style.display = 'none';
+    btnCompartir.style.display = 'none';
+    btnGuardar.style.display = 'none';
+  });
+});
+
+
+
+
 //Filtrar las imagenes con el searchBar
 class tarjetas {
     constructor(titulo, imagen, descripcion) {
