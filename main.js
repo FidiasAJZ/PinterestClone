@@ -66,7 +66,7 @@ const debounce = (fn, delay) => {
   };
 };
 // Evento que activa la funcion cuando se hace scroll
-window.addEventListener('scroll', debounce(loadMorePictures, 500));
+window.addEventListener('scroll', debounce(loadMorePictures, 200));
 
 
 
@@ -107,3 +107,30 @@ for (let i = 0; i < toggleBtns.length; i++) {
     });
   });
 }
+
+
+//Search con Unsplash API
+const form = document.querySelector('form');
+const searchInput = document.querySelector('#search-btn');
+
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const searchValue = searchInput.value;
+  const url = `https://api.unsplash.com/search/photos?query=${searchValue}&client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const images = data.results;
+      container.innerHTML = '';
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image.urls.regular;
+        img.alt = image.description;
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item', getRandomSize());
+        galleryItem.appendChild(img);
+        container.appendChild(galleryItem);
+      });
+    });
+});
