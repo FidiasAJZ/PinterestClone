@@ -45,7 +45,7 @@
   /* transform: scale(1.1); */
 }
 
-.btnCompartir{
+.btnCompartir {
   position: absolute;
   top: 90%;
   left: 75%;
@@ -53,7 +53,7 @@
   display: none;
 }
 
-.btnOpciones{
+.btnOpciones {
   position: absolute;
   top: 90%;
   left: 90%;
@@ -61,10 +61,16 @@
   display: none;
 }
 
-.btnGuardar{
+.btnGuardar {
   position: absolute;
   top: 10%;
   left: 80%;
   transform: translate(-50%, -50%);
   display: none;
+}
+
+.gallery-item:hover .btnOpciones,
+.gallery-item:hover .btnCompartir,
+.gallery-item:hover .btnGuardar {
+  display: block;
 }
