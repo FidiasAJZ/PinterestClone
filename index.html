@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+   <header>
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-brand">
@@ -28,15 +28,25 @@
             <li><a id="navInicio" class="active" href="#">Inicio</a></li>
             <li><a id="navHoy" href="#">Hoy</a></li>
             <li>
-              <a id="navCrear" href="#">Crear&nbsp;<i class='bx bxs-chevron-down'></i></a>
-              <div class="crear-down">
-                <a id="creaOption" class="active" href="https://chat.openai.com/">Crear un Idea Pin</a>
-                <a id="creaOption" href="https://chat.openai.com/">Crear Pin</a>
+              <a class="dropdown-toggle" href="#"
+                >Crear&nbsp;<i class="bx bxs-chevron-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item active"
+                  href="https://chat.openai.com/"
+                  >Crear un Idea Pin</a
+                >
+                <a
+                  class="dropdown-item"
+                  id="creaOption"
+                  href="https://chat.openai.com/"
+                  >Crear Pin</a
+                >
               </div>
             </li>
           </ul>
-
-      </div>
+        </div>
         <div class="navbar-search">
           <form onsubmit="buscar(event)">
             <input type="text" placeholder="Buscar en Pinterest" class="search-bar" id="search-btn">
@@ -47,14 +57,38 @@
         </div>
         <div class="adva-fun">
           <ul>
-            <li>
-              <div class="btn-fun"><i class='bx bxs-bell'></i></div>
+            <li class="notification">
+              <div class="btn-fun dropdown-toggle"><i class="bx bxs-bell"></i></div>
+              <div class="dropdown-notifi dropdown-menu">
+                <h3>Actualizaciones</h3>
+                <div class="not-item dropdown-item">
+                  <a class="not-a" href="#">
+                    <div class="img-cont">
+                      <img src="./img/IMG-1.jpg" alt="">
+                    </div>
+                    <div class="not-txt">
+                      <p>
+                        Mas inspiración basada en tu interes por <span>diseño web </span><span></span>
+                      </p>
+                    </div>
+                  </a>
+                  <div class="btn-icon">
+                    <a href="#">
+                      <i class='bx bx-dots-horizontal-rounded'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li>
-              <div class="btn-fun"><i class='bx bxs-message-rounded-dots'></i></div>
+            <li class="dropdown">
+              <div class="btn-fun">
+                <i class="bx bxs-message-rounded-dots"></i>
+              </div>
+              <div class="dropdown-message"></div>
             </li>
-            <li>
-              <div class="btn-fun"><i class='bx bxs-chevron-down'></i></div>
+            <li class="dropdown">
+              <div class="btn-fun"><i class="bx bxs-chevron-down"></i></div>
+              <div class="dropdown-more-option"></div>
             </li>
           </ul>
         </div>

@@ -13,13 +13,13 @@ header{
   width: 100%;
   background-color: #fff;
   box-shadow: -3px 8px 5px -8px rgba(0,0,0,0.2);
-  z-index: 1000;
 }
 .navbar {
   margin: auto;
   background-color: #fff;
   height: 80px;
   padding: 0 16px;
+
 }
 
 .navbar-container {
@@ -42,6 +42,7 @@ header{
 .navbar-brand img {
   height: 32px;
 }
+
 .navbar-search form {
   display: flex;
   align-items: center;
@@ -90,7 +91,7 @@ header{
 }
 
 
-.navbar-links .crear-down{
+.navbar-links .dropdown-menu{
   display: none;
   position: absolute;
   width: 165px;
@@ -100,20 +101,23 @@ header{
   box-shadow: 0px 1px 7px -1px rgba(0,0,0,0.2);
   transform: translate(-28%, 20%);
 }
-.navbar-links .crear-down.active{
+.navbar-links .dropdown-menu.active{
   display: block;
 }
 
-.navbar-links .crear-down a{
+.navbar-links .dropdown-menu .dropdown-item{
   display: block;
   border-radius: 8px;
   padding: 9px;
 }
-.navbar-links .crear-down a.active{
+.navbar-links .dropdown-menu .dropdown-item.active{
   background-color: #e9e6e6;
   color: #000;
 }
 
+/* ----------------
+advance opcion
+------------------- */
 .adva-fun ul{
   display: flex;
   /* justify-content: center; */
@@ -121,7 +125,7 @@ header{
   list-style: none;
 }
 .adva-fun .btn-fun{
-  position: relative;
+  /* position: relative; */
   display: block;
   width: 30px;
   height: 30px;
@@ -137,7 +141,99 @@ header{
   color: #000;
 }
 .adva-fun .btn-fun:hover{
-  background-color:#e9e6e6; ;
+  background-color:#e9e6e6;
 }
 
+/*---------------------------------
+dropdown notification
+----------------------------------*/
+.notification .dropdown-menu{
+  display: none;
+  position: absolute;
+  width: 370px;
+  height: 80vh;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border-radius: 17px;
+  box-shadow: 0px 4px 7px 5px rgba(0, 0, 0, 0.089);
+}
+.notification .dropdown-menu.active{
+  display: block;
+}
+
+.notification .dropdown-menu h3{
+ text-align: center;
+ line-height: 40px;
+ margin-top: 13px;
+ font-size: 16px;
+}
+
+.notification .dropdown-menu .not-item{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notification .dropdown-menu .not-item:hover{
+  background-color:#e9e6e6;
+}
+.notification .dropdown-menu .not-item:hover > .btn-icon a{
+  color: #000;
+}
+.notification .dropdown-menu .not-item .not-a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.notification .dropdown-menu .not-item .img-cont{
+  width: 40px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.notification .dropdown-menu .img-cont img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.not-txt{
+  max-width: 70%;
+}
+.not-txt p{
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.notification .dropdown-menu .btn-icon{
+  right: 10%;
+  top: 10%;
+  transform: translate(50%, 50%);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+.notification .dropdown-menu .btn-icon:hover{
+  background-color: #000;
+}
+.notification .dropdown-menu .btn-icon a{
+  color: #fff;
+}
+.notification .dropdown-menu .btn-icon a:hover{
+  color: #fff !important;
+}
 
