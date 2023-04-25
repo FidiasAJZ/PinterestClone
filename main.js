@@ -33,6 +33,22 @@ const loadMorePictures = async () => {
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item', getRandomSize());
         galleryItem.appendChild(img);
+
+        // Adding buttons to the fetched images
+        const button = document.createElement('button');
+        button.classList.add('btnOpciones');
+        button.textContent = '...';
+        const btnCompartir = document.createElement('button');
+        btnCompartir.classList.add('btnCompartir');
+        btnCompartir.textContent = 'Share';
+        const btnGuardar = document.createElement('button');
+        btnGuardar.classList.add('btnGuardar');
+        btnGuardar.textContent = 'Guardar';
+        galleryItem.appendChild(button);
+        galleryItem.appendChild(btnCompartir);
+        galleryItem.appendChild(btnGuardar);
+
+
         container.appendChild(galleryItem);
         lastPicture = galleryItem;
       });
@@ -48,6 +64,21 @@ const loadMorePictures = async () => {
           const original = galleryItems[i % galleryItems.length];
           const clone = original.cloneNode(true);
           clone.classList.add(getRandomSize());
+
+          // Adding buttons to the cloned images
+          const button = document.createElement('button');
+          button.classList.add('btnOpciones');
+          button.textContent = '...';
+          const btnCompartir = document.createElement('button');
+          btnCompartir.classList.add('btnCompartir');
+          btnCompartir.textContent = 'Share';
+          const btnGuardar = document.createElement('button');
+          btnGuardar.classList.add('btnGuardar');
+          btnGuardar.textContent = 'Guardar';
+          clone.appendChild(button);
+          clone.appendChild(btnCompartir);
+          clone.appendChild(btnGuardar);
+
           container.appendChild(clone);
         }
         lastPicture = container.lastElementChild;
@@ -134,10 +165,10 @@ form.addEventListener('submit', (event) => {
       });
     });
 
-      //Permite actualizar el array donde estan las busquedas recientes
-      for (let i = busquedasR.length - 1; i > 0; i--) {
-        busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
-      }
-      busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
-      console.log(busquedasR);
+  //Permite actualizar el array donde estan las busquedas recientes
+  for (let i = busquedasR.length - 1; i > 0; i--) {
+    busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
+  }
+  busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
+  console.log(busquedasR);
 });
