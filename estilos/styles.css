@@ -169,12 +169,19 @@ dropdown notification
   height: 80vh;
   right: 0;
   top: 100%;
+  overflow-y: hidden;
   background-color: #fff;
   border-radius: 17px;
   box-shadow: 0px 4px 7px 5px rgba(0, 0, 0, 0.089);
 }
 .notification .dropdown-menu.active{
   display: block;
+}
+
+.notification .title-fun{
+  width: 100%;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.089);
+  padding-bottom: 20px;
 }
 
 .notification .dropdown-menu h3{
@@ -184,6 +191,10 @@ dropdown notification
  font-size: 16px;
 }
 
+.notification .fun-container{
+  max-height: 60vh;
+  overflow: auto;
+}
 .notification .dropdown-menu .not-item{
   position: relative;
   width: 90%;
