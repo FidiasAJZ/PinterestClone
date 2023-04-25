@@ -34,8 +34,12 @@ form {
   }
   
   .resultados {
-    position: absolute;
-    margin-top: 44%;
+    position: fixed;
+    top: 8%;
+    right: 16%;
+    left: 20%;
+    bottom: 100%;
+    /* margin-top: 44%; */
     width: 950px;
     height: 600px;
     background-color: #fff;
