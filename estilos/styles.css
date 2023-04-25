@@ -10,6 +10,7 @@ navbar section
 --------------------------------------------------------*/
 header{
   position: fixed;
+  z-index: 1000;
   width: 100%;
   background-color: #fff;
   box-shadow: -3px 8px 5px -8px rgba(0,0,0,0.2);
