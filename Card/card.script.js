@@ -26,14 +26,14 @@ cards.forEach(card => {
   card.appendChild(btnGuardar);
   
   //Este evento nos permite crear algo en pantalla cuando el mouse esta encima de un elemento.
-  img.addEventListener('mouseover', () => {
+  card.addEventListener('mouseover', () => {
     button.style.display = 'block';
     btnCompartir.style.display = 'block';
     btnGuardar.style.display = 'block';
   });
   
   //Este evento hace lo contrario de lo de arriba, pero en este caso estamos eliminado lo que fue creado.
-  img.addEventListener('mouseout', () => {
+  card.addEventListener('mouseout', () => {
     button.style.display = 'none';
     btnCompartir.style.display = 'none';
     btnGuardar.style.display = 'none';
