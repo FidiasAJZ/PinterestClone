@@ -58,7 +58,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
   opacity: .8;
-  box-shadow: none !important;
+  border: none
 }
 
 .btnOpciones {
@@ -75,6 +75,7 @@
   height: 30px;
   width: 40px;
   border-radius: 20px;
+  border: none
 }
 
 .btnGuardar {
@@ -91,6 +92,7 @@
   height: 45px;
   width: 90px;
   opacity: .9;
+  border: none
 }
 
 .gallery-item:hover .btnOpciones,
