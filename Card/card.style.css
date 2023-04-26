@@ -48,9 +48,17 @@
 .btnCompartir {
   position: absolute;
   top: 90%;
-  left: 75%;
+  left: 68%;
   transform: translate(-50%, -50%);
   display: none;
+  border-radius: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  opacity: .8;
+  box-shadow: none !important;
 }
 
 .btnOpciones {
@@ -59,6 +67,14 @@
   left: 90%;
   transform: translate(-50%, -50%);
   display: none;
+  background-color: white;
+  color: black;
+  opacity: .8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 20px;
 }
 
 .btnGuardar {
@@ -67,6 +83,14 @@
   left: 80%;
   transform: translate(-50%, -50%);
   display: none;
+  background-color: red;
+  color: white;
+  border-radius: 19px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  height: 45px;
+  width: 90px;
+  opacity: .9;
 }
 
 .gallery-item:hover .btnOpciones,
