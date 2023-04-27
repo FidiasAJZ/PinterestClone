@@ -4,9 +4,11 @@ function addButtonsToImages() {
   images.forEach((img) => {
     const galleryItem = img.parentNode;
     const button = document.createElement('button');
-    button.classList.add('btnOpciones', 'fa', 'fa-ellipsis-h');
+    button.classList.add('btnOpciones');
+    button.innerHTML = '<i class="fa fa-ellipsis-h"></i>';
     const btnCompartir = document.createElement('button');
-    btnCompartir.classList.add('btnCompartir', 'fa', 'fa-upload');
+    btnCompartir.classList.add('btnCompartir');
+    btnCompartir.innerHTML = '<i class="fa fa-upload" aria-hidden="true"></i>';
     const btnGuardar = document.createElement('button');
     btnGuardar.classList.add('btnGuardar');
     btnGuardar.textContent = 'Guardar';
