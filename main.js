@@ -1,4 +1,22 @@
-// // Scroll infinito
+// Agregar Botones a las imagenes
+function addButtonsToImages() {
+  const images = document.querySelectorAll('.gallery-item img');
+  images.forEach((img) => {
+    const galleryItem = img.parentNode;
+    const button = document.createElement('button');
+    button.classList.add('btnOpciones', 'fa', 'fa-ellipsis-h');
+    const btnCompartir = document.createElement('button');
+    btnCompartir.classList.add('btnCompartir', 'fa', 'fa-upload');
+    const btnGuardar = document.createElement('button');
+    btnGuardar.classList.add('btnGuardar');
+    btnGuardar.textContent = 'Guardar';
+    galleryItem.appendChild(button);
+    galleryItem.appendChild(btnCompartir);
+    galleryItem.appendChild(btnGuardar);
+  });
+}
+
+// Scroll infinito
 
 const container = document.querySelector('.gallery');
 let lastPicture = container.lastElementChild;
@@ -35,19 +53,7 @@ const loadMorePictures = async () => {
         galleryItem.appendChild(img);
 
         // Adding buttons to the fetched images
-        const button = document.createElement('button');
-        button.classList.add('btnOpciones');
-        button.textContent = '...';
-        const btnCompartir = document.createElement('button');
-        btnCompartir.classList.add('btnCompartir');
-        btnCompartir.textContent = 'Share';
-        const btnGuardar = document.createElement('button');
-        btnGuardar.classList.add('btnGuardar');
-        btnGuardar.textContent = 'Guardar';
-        galleryItem.appendChild(button);
-        galleryItem.appendChild(btnCompartir);
-        galleryItem.appendChild(btnGuardar);
-
+        addButtonsToImages();
 
         container.appendChild(galleryItem);
         lastPicture = galleryItem;
@@ -66,18 +72,7 @@ const loadMorePictures = async () => {
           clone.classList.add(getRandomSize());
 
           // Adding buttons to the cloned images
-          const button = document.createElement('button');
-          button.classList.add('btnOpciones');
-          button.textContent = '...';
-          const btnCompartir = document.createElement('button');
-          btnCompartir.classList.add('btnCompartir');
-          btnCompartir.textContent = 'Share';
-          const btnGuardar = document.createElement('button');
-          btnGuardar.classList.add('btnGuardar');
-          btnGuardar.textContent = 'Guardar';
-          clone.appendChild(button);
-          clone.appendChild(btnCompartir);
-          clone.appendChild(btnGuardar);
+          addButtonsToImages();
 
           container.appendChild(clone);
         }
@@ -163,12 +158,13 @@ form.addEventListener('submit', (event) => {
         galleryItem.appendChild(img);
         container.appendChild(galleryItem);
       });
-    });
+      addButtonsToImages();
 
-  //Permite actualizar el array donde estan las busquedas recientes
-  for (let i = busquedasR.length - 1; i > 0; i--) {
-    busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
-  }
-  busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
-  console.log(busquedasR);
+      //Permite actualizar el array donde estan las busquedas recientes
+      for (let i = busquedasR.length - 1; i > 0; i--) {
+        busquedasR[i] = busquedasR[i - 1]; // Mover elementos hacia la derecha
+      }
+      busquedasR[0] = searchValue; // Asignar nuevo valor al primer elemento
+      console.log(busquedasR);
+    });
 });
