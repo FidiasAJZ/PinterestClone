@@ -112,7 +112,14 @@ header{
   color: #000;
 }
 
-/* Media query para dispositivos de hasta 768px */
+@media only screen and (max-width: 1200px) {
+  .resultados{
+    right: 18% !important;
+    left: 10% !important;
+  }
+}
+
+/* Media query para dispositivos de hasta 1090px */
 @media only screen and (max-width: 1090px) {
   .navbar-search input[type="text"] {  
     border: none;
@@ -137,7 +144,7 @@ header{
   }
 }
 
-/* Media query para dispositivos de hasta 768px */
+/* Media query para dispositivos de hasta 990 */
 @media only screen and (max-width: 990px) {
   .navbar-search input[type="text"] {  
     border: none;
@@ -178,12 +185,165 @@ header{
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .resultados{
+    right: 25% !important;
+    left: 4% !important;
+  }
+}
+@media only screen and (max-width: 948px) {
+  .resultados{
+    right: 25% !important;
+    left: 1% !important;
+    height: 400px !important;
+    overflow: auto !important; /* desbordamiento */
+  }
+  .titulo-card-1 h3{
+    top: 54% !important;
+    right: 74% !important;
+  }
+  .titulo-card-2 h3{
+    top: 54% !important;
+    right: 47% !important;
+  }
+  .titulo-card-3 h3{
+    top: 54% !important;
+    right: 30% !important;
+  }
+  .titulo-card-4 h3{
+    top: 54% !important;
+    right: 7% !important;
+  }
+  .titulo-card-5 h3{
+    top: 81% !important;
+    right: 79% !important;
+  }
+  .titulo-card-6 h3{
+    top: 81% !important;
+    right: 48% !important;
+  }
+  .titulo-card-7 h3{
+    top: 81% !important;
+    right: 29% !important;
+  }
+  .titulo-card-8 h3{
+    top: 81% !important;
+    right: 12% !important;
+  }
+  .titulo-popu-1 h3{
+    top: 123% !important;
+    right: 69% !important;
+  }
+  .titulo-popu-2 h3{
+    top: 123% !important;
+    right: 50% !important;
+  }
+  .titulo-popu-3 h3{
+    top: 123% !important;
+    right: 34% !important;
+  }
+  .titulo-popu-4 h3{
+    top: 123% !important;
+    right: 10% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #label7{
+    display: none !important;
+  }
+  #label6{
+    display: none !important;
+  }
+  #label5{
+    display: none !important;
+  }
+  #label4{
+    display: none !important;
+  }
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 14% !important;
+    bottom: 100% !important;
+    width: 655px !important;
+    height: 500px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+    overflow: auto !important; /* desbordamiento */
+  }
+
+  .titulo-card-1 h3{
+    top: 39% !important;
+    right: 63% !important;
+  }
+  .titulo-card-2 h3{
+    top: 39% !important;
+    right: 25% !important;
+  }
+  .titulo-card-3 h3{
+    top: 39% !important;
+    right: 0% !important;
+  }
+  .titulo-card-4 h3{
+    top: 61% !important;
+    right: 69% !important;
+  }
+  .titulo-card-5 h3{
+    top: 61% !important;
+    right: 36% !important;
+  }
+  .titulo-card-6 h3{
+    top: 61% !important;
+    right: -8% !important;
+  }
+  .titulo-card-7 h3{
+    top: 82% !important;
+    right: 65% !important;
+  }
+  .titulo-card-8 h3{
+    top: 82% !important;
+    right: 42% !important;
+  }
+
+  .titulo-popu-1 h3{
+    top: 113% !important;
+    right: 56% !important;
+  }
+  .titulo-popu-2 h3{
+    top: 113% !important;
+    right: 31% !important;
+  }
+  .titulo-popu-3 h3{
+    top: 113% !important;
+    right: 8% !important;
+  }
+  .titulo-popu-4 h3{
+    top: 135% !important;
+    right: 73% !important;
+  }
+}
+
 /* Media query para dispositivos de hasta 768px */
 @media only screen and (max-width: 768px) {
+  .navbar-search input[type="text"] {  
+    border: none;
+    border-radius: 24px;
+    height: 46px;
+    width: 550px !important; /* ajustamos el ancho al 100% */
+    padding: 0 12px;
+  }
   .navbar-container {
-    flex-direction: column;
+    flex-direction: flex;
     height: auto;
     padding: 16px 0;
+  }
+
+  #navInicio{
+    display: none;
   }
   
   .navbar-brand {
@@ -238,21 +398,64 @@ header{
     border-radius: 10px !important;
     z-index: 999 !important;
     display: none;
+    overflow: auto !important; /* desbordamiento */
   }
 
   .titulo-card-1 h3{
-    position:absolute;
-    top: 60% !important;
+    top: 50% !important;
     right: 63% !important;
-    transform: translate(-50%, -20%);
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    z-index: 1;
   }
 
-  .populares{
-    display: none;
+  .titulo-card-2 h3{
+    top: 50% !important;
+    right: 24% !important;
+  }
+
+  .titulo-card-3 h3{
+    top: 50% !important;
+    right: 0% !important;
+  }
+
+  .titulo-card-4 h3{
+    top: 76% !important;
+    right: 69% !important;
+  }
+
+  .titulo-card-5 h3{
+    top: 76% !important;
+    right: 35% !important;
+  }
+
+  .titulo-card-6 h3{
+    top: 76% !important;
+    right: -8% !important;
+  }
+
+  .titulo-card-7 h3{
+    top: 103% !important;
+    right: 65% !important;
+  }
+
+  .titulo-card-8 h3{
+    top: 103% !important;
+    right: 65% !important;
+  }
+
+  .titulo-popu-1 h3{
+    top: 142% !important;
+    right: 55% !important;
+  }
+  .titulo-popu-2 h3{
+    top: 142% !important;
+    right: 30% !important;
+  }
+  .titulo-popu-3 h3{
+    top: 142% !important;
+    right: 7% !important;
+  }
+  .titulo-popu-4 h3{
+    top: 168% !important;
+    right: 73% !important;
   }
 
   #label6{
@@ -271,6 +474,213 @@ header{
     display: none !important;
   }
 }
+@media only screen and (max-width: 720px) {
+  .navbar-search input[type="text"] {  
+    width: 450px !important; /* ajustamos el ancho al 100% */
+  }
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 5% !important;
+    bottom: 100% !important;
+    width: 650px !important;
+    height: 400px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+    overflow: auto !important; /* desbordamiento */
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar-search input[type="text"] {  
+    width: 410px !important; /* ajustamos el ancho al 100% */
+  }
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 14% !important;/**/
+    bottom: 100% !important;
+    width: 500px !important; /**/
+    height: 400px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+    overflow: auto !important; /* desbordamiento */
+  }
+  .titulo-card-1 h3{
+    top: 47% !important;
+    right: 54% !important;
+  }
+
+  .titulo-card-2 h3{
+    top: 47% !important;
+    right: 4% !important;
+  }
+
+  .titulo-card-3 h3{
+    top: 73% !important;
+    right: 58% !important;
+  }
+
+  .titulo-card-4 h3{
+    top: 73% !important;
+    right: 17% !important;
+  }
+
+  .titulo-card-5 h3{
+    top: 100% !important;
+    right: 61% !important;
+  }
+
+  .titulo-card-6 h3{
+    top: 100% !important;
+    right: 4% !important;
+  }
+
+  .titulo-card-7 h3{
+    top: 127% !important;
+    right: 56% !important;
+  }
+
+  .titulo-card-8 h3{
+    top: 127% !important;
+    right: 25% !important;
+  }
+
+  .titulo-popu-1 h3{
+    top: 164% !important;
+    right: 42% !important;
+  }
+  .titulo-popu-2 h3{
+    top: 164% !important;
+    right: 10% !important;
+  }
+  .titulo-popu-3 h3{
+    top: 190% !important;
+    right: 66% !important;
+  }
+  .titulo-popu-4 h3{
+    top: 190% !important;
+    right: 23% !important;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .navbar-search input[type="text"] {  
+    width: 350px !important; /* ajustamos el ancho al 100% */
+  }
+}
+@media only screen and (max-width: 510px) {
+  .navbar-search input[type="text"] {  
+    width: 310px !important; /* ajustamos el ancho al 100% */
+  }
+}
+@media only screen and (max-width: 460px) {
+  .navbar-search input[type="text"] {  
+    width: 280px !important; /* ajustamos el ancho al 100% */
+  }
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 6% !important;/**/
+    bottom: 100% !important;
+    width: 500px !important; /**/
+    height: 400px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+    overflow: auto !important; /* desbordamiento */
+  }
+}
+@media only screen and (max-width: 430px) {
+  .navbar-search input[type="text"] {  
+    width: 250px !important; /* ajustamos el ancho al 100% */
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar-search input[type="text"] {  
+    width: 230px !important; /* ajustamos el ancho al 100% */
+  }
+  #label2{
+    display: none !important;
+  }
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 12% !important;/**/
+    bottom: 100% !important;
+    width: 320px !important; /**/
+    height: 400px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+    overflow: auto !important; /* desbordamiento */
+  }
+  .titulo-card-1 h3{
+    top: 44% !important;
+    right: 25% !important;
+  }
+
+  .titulo-card-2 h3{
+    top: 70% !important;
+    right: 16% !important;
+  }
+
+  .titulo-card-3 h3{
+    top: 96% !important;
+    right: 34% !important;
+  }
+
+  .titulo-card-4 h3{
+    top: 122% !important;
+    right: 39% !important;
+  }
+
+  .titulo-card-5 h3{
+    top: 149% !important;
+    right: 39% !important;
+  }
+
+  .titulo-card-6 h3{
+    top: 175% !important;
+    right: 19% !important;
+  }
+
+  .titulo-card-7 h3{
+    top: 202% !important;
+    right: 31% !important;
+  }
+
+  .titulo-card-8 h3{
+    top: 228% !important;
+    right: 52% !important;
+  }
+  .titulo-popu-1 h3{
+    top: 263% !important;
+    right: 11% !important;
+  }
+  .titulo-popu-2 h3{
+    top: 290% !important;
+    right: 28% !important;
+  }
+  .titulo-popu-3 h3{
+    top: 317% !important;
+    right: 48% !important;
+  }
+  .titulo-popu-4 h3{
+    top: 343% !important;
+    right: 47% !important;
+  }
+}
+
 .navbar-links .dropdown-menu.active{
   display: block;
 }
