@@ -2,12 +2,12 @@ let ventanaEmergenteAbierta = true;
 var popup = document.querySelector(".resultados");
 var searchBtn = document.getElementById("search-btn");
 let busquedasR = [
-  "Programación web",
+  "Code",
   "Illustrator",
   "Pokémon",
-  "Aesthetic Design",
+  "Aesthetic",
   "React.js",
-  "Kodigo.org",
+  "Mario Bros",
 ];
 
 searchBtn.addEventListener("click", function () {
@@ -46,37 +46,37 @@ function buscar(event) {
                 `+
                 busquedasR[0]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
                 <label class="label-with-button" for="search-btn" id="label2">
                 `+
                 busquedasR[1]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
                 <label class="label-with-button" for="search-btn" id="label3">
                 `+
                 busquedasR[2]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
                 <label class="label-with-button" for="search-btn" id="label4">
                 `+
                 busquedasR[3]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
                 <label class="label-with-button" for="search-btn" id="label5">
                 `+
                 busquedasR[4]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
                 <label class="label-with-button" for="search-btn" id="label6">
                 `+
                 busquedasR[5]+
                 `
-                <button class="button-in-label"></button>
+                <button class="button-in-label"><ion-icon name="close-outline"></ion-icon></button>
                 </label>
     </div>`;
 
