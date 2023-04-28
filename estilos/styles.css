@@ -168,6 +168,14 @@ header{
     z-index: 999 !important;
     display: none;
   }
+
+  #label6{
+    display: none !important;
+  }
+
+  #label5{
+    display: none !important;
+  }
 }
 
 /* Media query para dispositivos de hasta 768px */
@@ -216,6 +224,51 @@ header{
     position: static;
     transform: none;
     margin-top: 8px;
+  }
+
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 7% !important;
+    bottom: 100% !important;
+    width: 650px !important;
+    height: 400px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
+  }
+
+  .titulo-card-1 h3{
+    position:absolute;
+    top: 60% !important;
+    right: 63% !important;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .populares{
+    display: none;
+  }
+
+  #label6{
+    display: none !important;
+  }
+
+  #label5{
+    display: none !important;
+  }
+
+  #label4{
+    display: none !important;
+  }
+
+  #label3{
+    display: none !important;
   }
 }
 .navbar-links .dropdown-menu.active{

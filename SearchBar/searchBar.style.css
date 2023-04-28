@@ -35,9 +35,9 @@ form {
   
   .resultados {
     position: fixed;
-    top: 8%;
-    right: 16%;
-    left: 20%;
+    top: 10%;
+    right: 12%;
+    left: 16%;
     bottom: 100%;
     /* margin-top: 44%; */
     width: 950px;
