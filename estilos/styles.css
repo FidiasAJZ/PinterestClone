@@ -118,8 +118,22 @@ header{
     border: none;
     border-radius: 24px;
     height: 46px;
-    width: 400px; /* ajustamos el ancho al 100% */
+    width: 550px; /* ajustamos el ancho al 100% */
     padding: 0 12px;
+  }
+
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 18% !important;
+    left: 7% !important;
+    bottom: 100% !important;
+    width: 950px !important;
+    height: 600px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
   }
 }
 
@@ -129,8 +143,30 @@ header{
     border: none;
     border-radius: 24px;
     height: 46px;
-    width: 300px; /* ajustamos el ancho al 100% */
+    width: 528px; /* ajustamos el ancho al 100% */
     padding: 0 12px;
+  }
+
+  .navHoy{
+    display: none;
+  }
+
+  .dropdown-toggle{
+    display: none;
+  }
+
+  .resultados{
+    position: absolute !important;
+    top: 94% !important;
+    right: 20% !important;
+    left: 7% !important;
+    bottom: 100% !important;
+    width: 950px !important;
+    height: 600px !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    z-index: 999 !important;
+    display: none;
   }
 }
 
