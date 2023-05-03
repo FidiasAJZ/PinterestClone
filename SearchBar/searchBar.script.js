@@ -91,10 +91,10 @@ function buscar(event) {
   }
   function crearTarjetas(nombreDeLaClase, titulo, imagen, descripcion) {
     // Crea una instancia de la clase con los argumentos proporcionados
-    var tarjeta = new tarjetas(titulo, imagen, descripcion);
+    var nombreDeLaClase = new tarjetas(titulo, imagen, descripcion);
   
     // Devuelve la instancia de la clase creada
-    return tarjeta;
+    return nombreDeLaClase;
   }
 
 //Aca se crean las cards especiales que son generadas a partir de objetos.
