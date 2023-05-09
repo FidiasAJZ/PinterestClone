@@ -66,137 +66,505 @@ form {
     border-radius: 30px;
     /* filter: brightness(80%) saturate(90%); */
   }
+
+  .titulo-card-1{
+    position: relative;
+    text-align: center;
+  }
+
+  /*Código de referencia al efecto de las tarjetas https://codepen.io/cassidoo/pen/RZOWQb */
+  .titulo-card-1:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-1:hover::before, .titulo-card-1:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-1:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
+  }
   
   .titulo-card-1 h3{
-    position:absolute;
-    top: 36%;
-    right: 75%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-2{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-2:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-2:hover::before, .titulo-card-2:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-2:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-2 h3{
-    position:absolute;
-    top: 36%;
-    right: 47%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-3{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-3:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-3:hover::before, .titulo-card-3:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-3:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-3 h3{
-    position:absolute;
-    top: 36%;
-    right: 30%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-4{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-4:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-4:hover::before, .titulo-card-4:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-4:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-4 h3{
-    position:absolute;
-    top: 36%;
-    right: 8%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-5{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-5:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-5:hover::before, .titulo-card-5:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-5:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-5 h3{
-    position:absolute;
-    top: 54%;
-    right: 79%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-6{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-6:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-6:hover::before, .titulo-card-6:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-6:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-6 h3{
-    position:absolute;
-    top: 54%;
-    right: 48%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-card-7{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-card-7:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-7:hover::before, .titulo-card-7:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-7:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-card-7 h3{
-    position:absolute;
-    top: 54%;
-    right: 29%;
-    transform: translate(-50%, -20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
   }
 
-  .titulo-card-8 h3{
-    position:absolute;
-    top: 54%;
-    right: 11%;
-    transform: translate(-50%, -20%);
-    color: white;
-    font-size: 20px;
+  .titulo-card-8{
+    position: relative;
     text-align: center;
+  }
+
+  .titulo-card-8:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-card-8:hover::before, .titulo-card-8:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-card-8:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
+  }
+
+  .titulo-card-8 h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     z-index: 1;
+  }
+
+
+  .titulo-popu-1{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-popu-1:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-popu-1:hover::before, .titulo-popu-1:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-popu-1:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-popu-1 h3{
     position: absolute;
-    top: 82%;
-    right: 69%;
-    transform: translate(-50%, -20%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-popu-2{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-popu-2:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-popu-2:hover::before, .titulo-popu-2:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-popu-2:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-popu-2 h3{
     position: absolute;
-    top: 82%;
-    right: 51%;
-    transform: translate(-50%, -20%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-popu-3{
+    position: relative;
+    text-align: center;
+  }
+  
+  .titulo-popu-3:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-popu-3:hover::before, .titulo-popu-3:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-popu-3:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-popu-3 h3{
     position: absolute;
-    top: 82%;
-    right: 34%;
-    transform: translate(-50%, -20%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  .titulo-popu-4{
+    position: relative;
+    text-align: center;
+  }
+
+  .titulo-popu-4:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .titulo-popu-4:hover::before, .titulo-popu-4:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    background: #F15A59;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .titulo-popu-4:hover:after {
+    background: #D21312;
+    animation: 2s counterclockwise infinite;
   }
 
   .titulo-popu-4 h3{
     position: absolute;
-    top: 82%;
-    right: 10%;
-    transform: translate(-50%, -20%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
-    text-align: center;
     z-index: 1;
+  }
+
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
   }
 
   .card-item:hover img {

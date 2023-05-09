@@ -145,7 +145,7 @@ const searchInput = document.querySelector('#search-btn');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const searchValue = searchInput.value;
-  const url = `https://api.unsplash.com/search/photos?query=${searchValue}&client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg`;
+  const url = `https://api.unsplash.com/search/photos?query=${searchValue}&per_page=30&client_id=4b0pExZtB3of1pv5IEVE9leVibY2shEZfe-tijEaCyg`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

@@ -198,54 +198,6 @@ header{
     height: 400px !important;
     overflow: auto !important; /* desbordamiento */
   }
-  .titulo-card-1 h3{
-    top: 54% !important;
-    right: 74% !important;
-  }
-  .titulo-card-2 h3{
-    top: 54% !important;
-    right: 47% !important;
-  }
-  .titulo-card-3 h3{
-    top: 54% !important;
-    right: 30% !important;
-  }
-  .titulo-card-4 h3{
-    top: 54% !important;
-    right: 7% !important;
-  }
-  .titulo-card-5 h3{
-    top: 81% !important;
-    right: 79% !important;
-  }
-  .titulo-card-6 h3{
-    top: 81% !important;
-    right: 48% !important;
-  }
-  .titulo-card-7 h3{
-    top: 81% !important;
-    right: 29% !important;
-  }
-  .titulo-card-8 h3{
-    top: 81% !important;
-    right: 12% !important;
-  }
-  .titulo-popu-1 h3{
-    top: 123% !important;
-    right: 69% !important;
-  }
-  .titulo-popu-2 h3{
-    top: 123% !important;
-    right: 50% !important;
-  }
-  .titulo-popu-3 h3{
-    top: 123% !important;
-    right: 34% !important;
-  }
-  .titulo-popu-4 h3{
-    top: 123% !important;
-    right: 10% !important;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -274,56 +226,6 @@ header{
     z-index: 999 !important;
     display: none;
     overflow: auto !important; /* desbordamiento */
-  }
-
-  .titulo-card-1 h3{
-    top: 39% !important;
-    right: 63% !important;
-  }
-  .titulo-card-2 h3{
-    top: 39% !important;
-    right: 25% !important;
-  }
-  .titulo-card-3 h3{
-    top: 39% !important;
-    right: 0% !important;
-  }
-  .titulo-card-4 h3{
-    top: 61% !important;
-    right: 69% !important;
-  }
-  .titulo-card-5 h3{
-    top: 61% !important;
-    right: 36% !important;
-  }
-  .titulo-card-6 h3{
-    top: 61% !important;
-    right: -8% !important;
-  }
-  .titulo-card-7 h3{
-    top: 82% !important;
-    right: 65% !important;
-  }
-  .titulo-card-8 h3{
-    top: 82% !important;
-    right: 42% !important;
-  }
-
-  .titulo-popu-1 h3{
-    top: 113% !important;
-    right: 56% !important;
-  }
-  .titulo-popu-2 h3{
-    top: 113% !important;
-    right: 31% !important;
-  }
-  .titulo-popu-3 h3{
-    top: 113% !important;
-    right: 8% !important;
-  }
-  .titulo-popu-4 h3{
-    top: 135% !important;
-    right: 73% !important;
   }
 }
 
@@ -401,63 +303,6 @@ header{
     overflow: auto !important; /* desbordamiento */
   }
 
-  .titulo-card-1 h3{
-    top: 50% !important;
-    right: 63% !important;
-  }
-
-  .titulo-card-2 h3{
-    top: 50% !important;
-    right: 24% !important;
-  }
-
-  .titulo-card-3 h3{
-    top: 50% !important;
-    right: 0% !important;
-  }
-
-  .titulo-card-4 h3{
-    top: 76% !important;
-    right: 69% !important;
-  }
-
-  .titulo-card-5 h3{
-    top: 76% !important;
-    right: 35% !important;
-  }
-
-  .titulo-card-6 h3{
-    top: 76% !important;
-    right: -8% !important;
-  }
-
-  .titulo-card-7 h3{
-    top: 103% !important;
-    right: 65% !important;
-  }
-
-  .titulo-card-8 h3{
-    top: 103% !important;
-    right: 42% !important;
-  }
-
-  .titulo-popu-1 h3{
-    top: 142% !important;
-    right: 55% !important;
-  }
-  .titulo-popu-2 h3{
-    top: 142% !important;
-    right: 30% !important;
-  }
-  .titulo-popu-3 h3{
-    top: 142% !important;
-    right: 7% !important;
-  }
-  .titulo-popu-4 h3{
-    top: 168% !important;
-    right: 73% !important;
-  }
-
   #label6{
     display: none !important;
   }
@@ -511,62 +356,6 @@ header{
     z-index: 999 !important;
     display: none;
     overflow: auto !important; /* desbordamiento */
-  }
-  .titulo-card-1 h3{
-    top: 47% !important;
-    right: 54% !important;
-  }
-
-  .titulo-card-2 h3{
-    top: 47% !important;
-    right: 4% !important;
-  }
-
-  .titulo-card-3 h3{
-    top: 73% !important;
-    right: 58% !important;
-  }
-
-  .titulo-card-4 h3{
-    top: 73% !important;
-    right: 17% !important;
-  }
-
-  .titulo-card-5 h3{
-    top: 100% !important;
-    right: 61% !important;
-  }
-
-  .titulo-card-6 h3{
-    top: 100% !important;
-    right: 4% !important;
-  }
-
-  .titulo-card-7 h3{
-    top: 127% !important;
-    right: 56% !important;
-  }
-
-  .titulo-card-8 h3{
-    top: 127% !important;
-    right: 25% !important;
-  }
-
-  .titulo-popu-1 h3{
-    top: 164% !important;
-    right: 42% !important;
-  }
-  .titulo-popu-2 h3{
-    top: 164% !important;
-    right: 10% !important;
-  }
-  .titulo-popu-3 h3{
-    top: 190% !important;
-    right: 66% !important;
-  }
-  .titulo-popu-4 h3{
-    top: 190% !important;
-    right: 23% !important;
   }
 }
 @media only screen and (max-width: 580px) {
@@ -623,61 +412,6 @@ header{
     z-index: 999 !important;
     display: none;
     overflow: auto !important; /* desbordamiento */
-  }
-  .titulo-card-1 h3{
-    top: 44% !important;
-    right: 25% !important;
-  }
-
-  .titulo-card-2 h3{
-    top: 70% !important;
-    right: 16% !important;
-  }
-
-  .titulo-card-3 h3{
-    top: 96% !important;
-    right: 34% !important;
-  }
-
-  .titulo-card-4 h3{
-    top: 122% !important;
-    right: 39% !important;
-  }
-
-  .titulo-card-5 h3{
-    top: 149% !important;
-    right: 39% !important;
-  }
-
-  .titulo-card-6 h3{
-    top: 175% !important;
-    right: 19% !important;
-  }
-
-  .titulo-card-7 h3{
-    top: 202% !important;
-    right: 31% !important;
-  }
-
-  .titulo-card-8 h3{
-    top: 228% !important;
-    right: 52% !important;
-  }
-  .titulo-popu-1 h3{
-    top: 263% !important;
-    right: 11% !important;
-  }
-  .titulo-popu-2 h3{
-    top: 290% !important;
-    right: 28% !important;
-  }
-  .titulo-popu-3 h3{
-    top: 317% !important;
-    right: 48% !important;
-  }
-  .titulo-popu-4 h3{
-    top: 343% !important;
-    right: 47% !important;
   }
 }
 
